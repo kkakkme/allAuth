@@ -1,0 +1,12 @@
+1: User is directed to text their email address to an SMS shortcode
+2: shortcode connect to PLivo backend
+3: User then sent an SMS to call back the number
+4: User calls the number
+5: if User phone number not in DB, say("Please text your email address to this number")
+6: else (say "Please enter your credit card number. This will not be charged or stored"
+7: getNumber(CC.number)
+8: goto stripe, Preauthorize(CC.number, 1 dollar)
+9: retrieve user name, address
+10: say(" Are you <name> living at <address>")
+11: get password
+
